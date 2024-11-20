@@ -17,7 +17,7 @@ def encrypt(password: str) -> str:
     # Remember to:
     # 1. Encode the password string
     # 2. Use hexdigest() to get the hash
-    pass
+    return hashlib.sha256(password.encode()).hexdigest()
 
 
 # Test your encrypt function
@@ -61,7 +61,8 @@ def add_update_user(users: dict, username: str, password: str) -> None:
     add_user(users, "alice", "newpass123")
     returns {"alice": "new_hash"} where new_hash is encrypt("newpass123")
     """
-    pass
+    users[username] = encrypt(password)
+    return users
 
 
 def test_add_update_user():
@@ -97,7 +98,13 @@ def check_password(users: dict, username: str, password: str) -> bool:
     # 1. The username exists in the database
     # 2. The hashed password matches what's stored
     # Hint: Use the encrypt() function on the password before comparing!
-    pass
+    if username in users.keys():
+        if users[username] == encrypt(password):
+            return True
+        else:
+            return False
+    else:
+        return False
 
 
 # Test your check_password function
@@ -130,7 +137,17 @@ def add_user_with_requirements(users: dict, username: str, password: str) -> boo
     - Contains at least one uppercase letter
     Returns False if requirements aren't met
     """
-    pass
+    if len(password) >= 8:
+        if any(char.isdigit() for char in password):
+            if any(char.isupper() for char in password):
+                users[username] = encrypt(password)
+                return users
+            else:
+                return False
+        else:
+            return False
+    else:
+        return False
 
 
 # Test your password requirements
@@ -173,7 +190,9 @@ def add_user_with_salt(users: dict, username: str, password: str) -> None:
     add_user_with_salt({}, "alice", "pass123")
     returns {"alice": hash_of_pass123_plus_global_salt}
     """
-    pass
+    salt_pass = password + "fj29sk3n4890cmx"
+    users[username] = encrypt(salt_pass)
+    return users
 
 
 def test_salt():
