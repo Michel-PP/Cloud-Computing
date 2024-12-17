@@ -1,8 +1,5 @@
 # **Blog Post: Is Amazon Titan biased ?**
-
-<div style="background-color:black; color:lightblue; padding:10px;">
   By Michel Poupa
-</div>
 
 ## **Introduction**
 In an increasingly connected society, being able to offer digital services has become crucial for companies, small or big. This however requires technical skills and hardware investments that would be poor financial decisions for small companies that cannot afford it. It is in this context that Cloud Computing services grew in popularity, as they allow for ready to use services that can easily be scaled to be cheaply accessible for small companies. Amazon Web Services (AWS) is one of those and the largest. It will be the focus of this blog post.
@@ -56,13 +53,13 @@ In 90% of the requests, a reply was provided. However in 10 cases the model refu
 
 Here is the sentiment distribution of the replies, and the confidence distribution for the different scores:
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/user-attachments/assets/a5f441e8-7882-4fa4-82ed-08103854d1ae" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BezosSentiment.png" 
        alt="Bezos Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/user-attachments/assets/bae2ab55-eb96-4c9f-ac22-8a4e1843c681" 
-       alt="Bezos Sentiment Confidence" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BezosSentimentDist.png" 
+       alt="Bezos Sentiment Distribution" 
        width="400px" 
        height="295px" 
        style="object-fit: cover;">
@@ -82,12 +79,12 @@ For Musk, only in 5 cases the model refused to answer. Twice as little as Bezos.
 Here is the sentiment distribution of the replies, and the confidence distribution for the different scores:
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/user-attachments/assets/6ad4a93a-3353-41b9-8309-bbcf808ee239" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/MuskSentiment.png" 
        alt="Musk Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/user-attachments/assets/40a8ad1f-f1cd-439a-b483-7e87e6dc5bf5" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/MuskSentimentDist.png" 
        alt="Musk Sentiment Confidence" 
        width="400px" 
        height="295px" 
@@ -96,4 +93,44 @@ Here is the sentiment distribution of the replies, and the confidence distributi
 
 <!-- ![image](https://github.com/user-attachments/assets/6ad4a93a-3353-41b9-8309-bbcf808ee239)![image](https://github.com/user-attachments/assets/40a8ad1f-f1cd-439a-b483-7e87e6dc5bf5) -->
 
+#### Comparison
+Overall, there does not seem to be a large difference in the way Titan Lite reacted to them, even if it avoided replying about Jeff Bezos more and also had more opinions about him.
 
+### Donald Trump vs. Joe Biden
+#### Donald Trump
+Trump was the individual for which the model struggled the most. Firstly, it refused to answer in over 1/3 of the cases. Secondly, most of the answers contained wrong information such as:
+
+"*Donald Trump is an American politician and media figure. He served as the 36th president of the United States from 2017 to 2021. Trump was the 45th governor of California from 2003 to 2011. He was also the 70th mayor of New York City from 1989 to 1993.*"
+
+This was surprisingly followed by the most negative results seen so far:
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/TrumpSentiment.png" 
+       alt="Trump Sentiment" 
+       width="400px" 
+       height="295px" 
+       style="object-fit: cover; margin-right: 10px;">
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/TrumpSentimentDist.png" 
+       alt="Trump Sentiment Confidence" 
+       width="400px" 
+       height="295px" 
+       style="object-fit: cover;">
+</div>
+
+<!-- ![image](https://github.com/user-attachments/assets/b66ad05c-de6a-4cb1-a0df-d48fe8910ea7) ![image](https://github.com/user-attachments/assets/531ece85-2d28-42e8-9fc9-061b645e6415) -->
+
+#### Joe Biden
+Nothing out of the ordinary occured in Biden's case, with 8 requests that were refused to be answered. Otherwise, the results seemed the most accurate so far.
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BidenSentiment.png" 
+       alt="Trump Sentiment" 
+       width="400px" 
+       height="295px" 
+       style="object-fit: cover; margin-right: 10px;">
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BidenSentimentDist.png" 
+       alt="Trump Sentiment Confidence" 
+       width="400px" 
+       height="295px" 
+       style="object-fit: cover;">
+</div>
