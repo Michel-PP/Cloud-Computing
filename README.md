@@ -53,12 +53,12 @@ In 90% of the requests, a reply was provided. However, in 10 cases the model ref
 
 Here is the sentiment distribution of the replies, and the individual score distribution for the different sentiments:
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BezosSentiment.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BezosSentiment.png" 
        alt="Bezos Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BezosSentimentDist.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BezosSentimentDist.png" 
        alt="Bezos Sentiment Distribution" 
        width="400px" 
        height="295px" 
@@ -79,12 +79,12 @@ For Musk, only in 5 cases the model refused to answer. Twice as little as Bezos.
 Here is the sentiment distribution of the replies, and the individual score distribution for the different sentiments:
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/MuskSentiment.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/MuskSentiment.png" 
        alt="Musk Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/MuskSentimentDist.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/MuskSentimentDist.png" 
        alt="Musk Sentiment Confidence" 
        width="400px" 
        height="295px" 
@@ -105,12 +105,12 @@ Trump was the individual for which the model struggled the most. Firstly, it ref
 This was surprisingly followed by the most negative results seen so far:
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/TrumpSentiment.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/TrumpSentiment.png" 
        alt="Trump Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/TrumpSentimentDist.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/TrumpSentimentDist.png" 
        alt="Trump Sentiment Confidence" 
        width="400px" 
        height="295px" 
@@ -123,12 +123,12 @@ This was surprisingly followed by the most negative results seen so far:
 Nothing out of the ordinary occurred in Biden's case, with 8 requests that were refused to be answered. Otherwise, the results seemed the most accurate so far.
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BidenSentiment.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BidenSentiment.png" 
        alt="Trump Sentiment" 
        width="400px" 
        height="295px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BidenSentimentDist.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BidenSentimentDist.png" 
        alt="Trump Sentiment Confidence" 
        width="400px" 
        height="295px" 
@@ -144,22 +144,22 @@ Overall, it seems that Titan Lite struggles to describe real life people, furthe
 To conclude, here-are four word clouds to compare the replies provided in order to provide a less computational and more personal interpretation of the results:
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BezosCloud.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BezosCloud.png" 
        alt="Bezos Word Cloud" 
        width="400px" 
        height="400px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/MuskCloud.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/MuskCloud.png" 
        alt="Musk Word Cloud" 
        width="400px" 
        height="400px" 
        style="object-fit: cover;">
-   <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/TrumpCloud.png" 
+   <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/TrumpCloud.png" 
        alt="Bezos Word Cloud" 
        width="400px" 
        height="400px" 
        style="object-fit: cover; margin-right: 10px;">
-  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/Assets/BidenCloud.png" 
+  <img src="https://github.com/Michel-PP/Cloud-Computing/blob/Page/assets/BidenCloud.png" 
        alt="Musk Word Cloud" 
        width="400px" 
        height="400px" 
